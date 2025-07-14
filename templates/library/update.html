@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block main %}
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="">
+        library id:
+        <input type="text" name="lno" value="{{lobj.lib_id}}">
+    </label><br><br>
+    <label for="">
+        author:
+        <input type="text" name="author" value="{{lobj.author}}">
+    </label><br><br>
+    <label for="">
+        title:
+        <input type="text" namee="title" value="{{lobj.title}}">
+    </label><br><br>
+    <label for="">
+        genre:
+        <input type="text" name="genre" value="{{lobj.genre}}">
+    </label><br><br>
+    <input type="submit" value="update">
+</form>
+{% endblock %}

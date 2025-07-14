@@ -1,0 +1,15 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+
+#heading{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+#content{
+    padding: 10px;
+}

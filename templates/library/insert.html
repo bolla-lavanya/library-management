@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block main %}
+<form action="" method="post">
+    {%csrf_token%}
+    <label for="">
+        library id:
+        <input type="text" name="lib_id">
+    </label><br><br>
+    <label for="">
+        title:
+        <input type="text" name="title">
+    </label><br><br>
+    <label for="">
+        author:
+        <input type="text" name="author">
+    </label><br><br>
+    <label for="">
+        genre:
+        <input type="text" name="genre">
+    </label><br><br>
+    <input type="submit" value="insert">
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{%block main %}
+<form action=""method="post">
+    {% csrf_token %}
+    <p>Do you want to delete {{lobj.title}}</p> 
+    <input type="submit" value="delete">
+    </p>
+</form>
+{%endblock%}
